@@ -1,0 +1,18 @@
+@each $color, $value in $button-color {
+    .btn-#{$color} {
+      background-color: $value;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: $font-size-normal;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn-#{$color}:hover {
+      background-color: darken($value, 10%);
+    }
+    .btn-#{$color}:active {
+      background-color: darken($value, 20%);
+    }
+  }
+  

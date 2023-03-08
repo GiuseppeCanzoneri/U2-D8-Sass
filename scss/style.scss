@@ -1,0 +1,110 @@
+@import "./partials/colors";
+@import "./partials/font";
+@import "./partials/resets";
+@import "./partials/animazioni";
+@import "./partials/bottoni";
+@import "./partials/mixins-generici";
+@import "./partials/spaziature";
+
+
+/* Layout full width */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background-color: $color-primary;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.navbar__logo {
+  font-size: $font-size-large;
+  font-weight: bold;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: $font-size-normal;
+  font-weight: bold;
+}
+
+/* Headline */
+.headline {
+  background-color: $color-lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 20px;
+}
+
+.headline__description {
+  width: 50%;
+  font-size: $font-size-large;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.headline__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.headline__button {
+  margin: 10px 0;
+  padding: 12px 30px;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: $font-size-normal;
+}
+
+.headline__button--primary {
+  background-color: $color-primary;
+}
+
+.headline__button--secondary {
+  background-color: $color-secondary;
+}
+
+.headline__button--success {
+  background-color: $color-success;
+}
+
+.headline__button:hover {
+  transform: translateY(-2px);
+}
+
+// /* Hero section */
+// .hero {
+//   background-color: $color-primary;
+//   background-image: url("https://via.placeholder.com/600x400");
+//   background-position: right;
+//   background-size: cover;
+//   display: flex;
+//   justify

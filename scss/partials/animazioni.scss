@@ -1,0 +1,20 @@
+ /* Mixin per l'animazione */
+ @mixin hero-animation($duration: 1s, $delay: 0s, $start-point: -50px, $end-point: 0, $name: "default") {
+    @keyframes #{$name} {
+      from {
+        opacity: 0;
+        transform: translateY(#{$start-point});
+      }
+      to {
+        opacity: 1;
+        transform: translateY(#{$end-point});
+      }
+    }
+  
+    animation-duration: $duration;
+    animation-timing-function: ease-in-out;
+    animation-delay: $delay;
+    animation-name: #{$name};
+    animation-fill-mode: both;
+  }
+  

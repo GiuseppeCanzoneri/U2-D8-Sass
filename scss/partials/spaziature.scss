@@ -1,0 +1,29 @@
+// padding
+@for $i from 1 through 5 {
+    .padding-block-#{$i} {
+      padding-block: #{$i * 10}px;
+    }
+    .padding-inline-#{$i} {
+      padding-inline: #{$i * 10}px;
+    }
+  }
+  
+  @for $i from 1 through 5 {
+    .padding-block-#{$i} {
+      padding-block: #{$i * 10}px;
+    }
+    .padding-inline-#{$i} {
+      padding-inline: #{$i * 10}px;
+    }
+  }
+  
+  // margin
+  @for $i from 1 through 5 {
+    .margin-block-#{$i} {
+      margin-block: #{$i * 10}px;
+    }
+    .margin-inline-#{$i} {
+      margin-inline: #{$i * 10}px;
+    }
+  }
+  
